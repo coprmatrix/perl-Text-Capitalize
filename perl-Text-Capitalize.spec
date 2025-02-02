@@ -28,8 +28,10 @@ Source0:        https://cpan.metacpan.org/authors/id/D/DO/DOOM/%{cpan_name}-%{ve
 BuildArch:      noarch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 BuildRequires:  rpm_macro(perl_gen_filelist)
-BuildRequires:  perl(Module::Build) >= 0.420000
-%{perl_requires}
+BuildRequires:  perl(Module::Build) >= 0.4
+BuildRequires:  perl(Env)
+BuildRequires:  perl(FindBin)
+%{?perl_requires}
 
 %description
 Text::Capitalize provides some routines for *title-like* formatting of
