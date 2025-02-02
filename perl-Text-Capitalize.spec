@@ -27,8 +27,7 @@ Url:            https://metacpan.org/release/%{cpan_name}
 Source0:        https://cpan.metacpan.org/authors/id/D/DO/DOOM/%{cpan_name}-%{version}.tar.gz
 BuildArch:      noarch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
-BuildRequires:  perl
-BuildRequires:  perl-macros
+BuildRequires:  rpm_macro(perl_gen_filelist)
 BuildRequires:  perl(Module::Build) >= 0.420000
 %{perl_requires}
 
