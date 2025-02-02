@@ -18,7 +18,7 @@
 
 Name:           perl-Text-Capitalize
 Version:        1.5
-Release:        0
+Release:        1
 %define cpan_name Text-Capitalize
 Summary:        Capitalize strings ("to WORK AS titles" becomes "To Work as Titles")
 License:        Artistic-1.0 OR GPL-1.0-or-later
@@ -27,7 +27,8 @@ Url:            https://metacpan.org/release/%{cpan_name}
 Source0:        https://cpan.metacpan.org/authors/id/D/DO/DOOM/%{cpan_name}-%{version}.tar.gz
 BuildArch:      noarch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
-BuildRequires:  rpm_macro(perl_gen_filelist)
+BuildRequires:  perl-macros-suse
+BuildRequires:  perl-generators
 BuildRequires:  perl(Module::Build) >= 0.4
 BuildRequires:  perl(Env)
 BuildRequires:  perl(FindBin)
